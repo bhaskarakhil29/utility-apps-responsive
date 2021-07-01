@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Base Converter | Utility Apps</title>
+
+    <link
+      rel="shortcut icon"
+      href="/icons/exchange (1).png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/27ec9572c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/text.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navbar">
+        <a href="/index.html"><h1 class="brand-name">ConvertOnGo</h1></a>
+        <a href="#" class="toggle-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/encoder/encoder.html">Encoder/Decoder</a></li>
+            <li><a href="/color/color.html">Color Converter</a></li>
+            <li><a href="/timestamp/timestamp.html">Timestamp Converter</a></li>
+            <li><a href="/units/units.html">Unit Converter</a></li>
+            <li><a href="/base/base.html">Base Converter</a></li>
+            <li><a href="#">Text Tools</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="text-tools">
+        <section class="text-tools-menu">
+          <h3 class="word-counter">Word Counter</h3>
+          <h3 class="string-reversal">String Reversal</h3>
+        </section>
+        <section class="text-tools">
+          <div class="text-tools-1">
+            <h2>Word Counter</h2>
+            <textarea
+              name="something"
+              id="counter"
+              cols="10"
+              rows="10"
+              placeholder="Enter some text"
+            ></textarea>
+            <h3 class="sentence">
+              The entered text contains <span class="counter-span"></span> words
+            </h3>
+          </div>
+          <div class="text-tools-2 hide">
+            <h2>String Reversal</h2>
+            <label for="reversal-input">Input String</label>
+            <input
+              type="text"
+              placeholder="Enter a string"
+              id="reversal-input"
+            />
+            <label for="reversal-output">Reversed String</label>
+            <input
+              type="text"
+              placeholder="Your reversed String"
+              id="reversal-output"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/text.js"></script>
+  </body>
+</html>

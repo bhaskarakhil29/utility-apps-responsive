@@ -1,0 +1,27 @@
+.units-desc {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.units-desc h2 {
+  padding: 1rem;
+}
+.length-conversion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  width: 80%;
+  margin: 4rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 0px 10px rgba(126, 126, 126, 0.452);
+}
+.length-conversion label {
+  padding: 1rem;
+}
+.length-conversion input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid blue;
+}

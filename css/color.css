@@ -1,0 +1,47 @@
+.color-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.color-section h2 {
+  padding: 2rem;
+}
+.color-section input {
+  border: none;
+  border-bottom: 1.5px dotted black;
+  outline: none;
+  padding: 1rem 2rem;
+  margin: 2rem;
+}
+.color-container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.color-section button {
+  padding: 2rem 4rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background: var(--nav-color);
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+}
+.color-section button:hover {
+  font-size: 1.8rem;
+  background: rgb(2, 58, 30);
+}
+@media screen and (max-width: 600px) {
+  .color-section input {
+    padding: 0.5rem 1rem;
+  }
+  .color-container {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,89 @@
+.encode-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  /* justify-items: center; */
+  align-items: center;
+  text-align: center;
+}
+
+.encode-section .encode-menu {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.encode-section .encode-menu h3 {
+  cursor: pointer;
+  padding: 2rem 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: var(--nav-color);
+  color: #fff;
+}
+
+.encode-section .encode-menu h3:hover {
+  background-color: rgb(162, 95, 238);
+}
+.encode-section .menu-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid rgb(60, 3, 126);
+  border-radius: 2rem;
+  width: 70%;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+.encode-section .menu-layout h2 {
+  padding: 2rem;
+}
+
+.encode-section .menu-layout label {
+  padding: 1rem;
+}
+.encode-section .menu-layout input {
+  padding: 1rem 2rem;
+  height: 5rem;
+  width: 50rem;
+  margin: 0 1rem;
+  border: 1px solid var(--nav-color);
+  border-radius: 1rem;
+}
+.encode-section .menu-layout button {
+  padding: 1rem 4rem;
+  margin: 1rem;
+  border: 1px solid rgb(162, 95, 238);
+  background: rgb(48, 1, 102);
+  cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+}
+.encode-section .menu-layout button:hover {
+  background: rgb(17, 1, 36);
+  border: 1px solid black;
+}
+.encode-section .menu-layout.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 45%;
+  }
+  .encode-section .menu-layout {
+    width: 90%;
+  }
+  .encode-section .menu-layout input {
+    /* padding: 1rem 4rem; */
+    height: calc(10rem + 1vw);
+    width: calc(30rem + 1vw);
+  }
+}

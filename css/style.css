@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  --header-1: calc(2.2rem + 0.8vw);
+  --header-2: calc(3rem + 1vw);
+  --header-3: calc(1.5rem + 0.4vw);
+  --text: calc(1.2rem + 0.4vw);
+  --hover-color: #555;
+  --nav-color: #333;
+  --main-color: #a239ea;
+  --btn-color: rgb(48, 1, 102);
+  --btn-hover: rgb(17, 1, 36);
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+h1 {
+  font-size: var(--header-1);
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: var(--header-2);
+}
+h3 {
+  font-size: var(--header-3);
+  font-weight: normal;
+}
+li,
+a,
+label,
+button {
+  font-size: var(--text);
+  text-decoration: none;
+}
+#home {
+  min-height: 10vh;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-color);
+  color: white;
+}
+.brand-name {
+  /* flex: 1 1 40rem; */
+  padding: 2rem;
+  color: white;
+}
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  display: block;
+}
+.navbar-links li:hover {
+  background: var(--hover-color);
+}
+.toggle-btn {
+  position: absolute;
+  top: 2.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.hero-links div {
+  border: 1px solid var(--nav-color);
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  background: var(--main-color);
+  color: white;
+}
+.hero-links div h3 {
+  padding: 0.5rem;
+}
+.hero-links div button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  background: var(--btn-color);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+.hero-links div button a {
+  color: white;
+  text-decoration: none;
+}
+.hero-links div button:hover {
+  background-color: var(--btn-hover);
+  color: #fff;
+}
+
+@media (max-width: 1140px) {
+  .brand-name {
+    padding: 1rem;
+  }
+  .toggle-btn {
+    display: flex;
+    top: 1.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.75rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}

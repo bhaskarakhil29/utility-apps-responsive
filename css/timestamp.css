@@ -1,0 +1,116 @@
+.time-stamp-section {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-stamp-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.time-stamp-menu h3 {
+  padding: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.epoch {
+  background: var(--btn-color);
+  color: white;
+}
+.menu-layout {
+  margin: 2rem;
+  width: 80%;
+  text-align: center;
+}
+.menu-layout-1 {
+  display: flex;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0px 10px rgba(126, 126, 126, 0.452);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-layout-1 h2 {
+  padding: 1rem;
+}
+.menu-layout-1 label {
+  padding: 0.2rem;
+}
+
+.menu-layout-1 input {
+  padding: 1rem 2rem;
+  height: 50px;
+  width: 70%;
+  margin: 1rem;
+}
+
+.menu-layout-1 button,
+.menu-layout-2 button {
+  margin: 2rem;
+  padding: 1.5rem 3rem;
+  background: var(--btn-color);
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.menu-layout-1 button:hover,
+.menu-layout-2 button:hover {
+  background: var(--btn-hover);
+  border: 2px solid black;
+}
+.menu-layout-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0px 10px rgba(126, 126, 126, 0.452);
+  padding: 2rem;
+}
+.epoch-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+.epoch-input input {
+  width: 75px;
+  height: 30px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#epoch-output-id {
+  height: 30px;
+  width: 250px;
+  padding: 1rem 3rem;
+  margin: 1rem;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .menu-layout-1 input {
+    padding: 1rem 0.5rem;
+    height: 20px;
+    width: 200px;
+    margin: 1rem;
+  }
+  #epoch-output-id {
+    height: 20px;
+    width: 180px;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+  }
+}

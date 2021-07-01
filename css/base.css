@@ -1,0 +1,45 @@
+.units-desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 80vh;
+  justify-content: center;
+  text-align: center;
+}
+.base-conversion {
+  padding: 2rem;
+  width: 70%;
+  margin: 4rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 0px 10px rgba(126, 126, 126, 0.452);
+}
+.base-conversion label {
+  display: block;
+  margin: 0.5rem;
+}
+.base-conversion input {
+  height: 20px;
+  width: 40%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.units-desc button {
+  padding: 1.5rem 3rem;
+  background: var(--btn-color);
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.units-desc button:hover {
+  background: var(--btn-hover);
+  border: 2px solid black;
+}
+@media screen and (max-width: 600px) {
+  .base-conversion input {
+    height: 20px;
+    width: 80%;
+  }
+}
